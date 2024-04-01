@@ -30,7 +30,7 @@ const dbUrl  = process.env.DB_URL;
 const MongoDbStore = require('connect-mongo')(session);
 
 const store = new MongoDbStore({
-  url:'mongodb://127.0.0.1:27017/yelp-camp',
+  url:'mongodb+srv://shivamg17012002:QQyeuB2CzOpyrc0O@cluster0.qdzw4xw.mongodb.net/',
   secret: "Thisshouldbebettersecret",
   touchAfter:24*60*50
 });
@@ -51,7 +51,7 @@ const sessionConfig = {
 };
 // "mongodb://127.0.0.1:27017/yelp-camp"
 mongoose
-  .connect("mongodb://127.0.0.1:27017/yelp-camp", {
+  .connect("mongodb+srv://shivamg17012002:QQyeuB2CzOpyrc0O@cluster0.qdzw4xw.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
